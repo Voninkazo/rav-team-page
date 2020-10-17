@@ -1,23 +1,29 @@
 {
-  "name": "rav-team-page",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Voninkazo/rav-team-page.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Voninkazo/rav-team-page/issues"
-  },
-  "homepage": "https://github.com/Voninkazo/rav-team-page#readme",
-  "dependencies": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
-  }
+    "name": "rav-team-page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "css": "node-sass scss/ -o webroot/css",
+        "css:watch": "npm run css && node-sass scss/ -w -o webroot/css",
+        "start": "parcel webroot/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Voninkazo/rav-team-page.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Voninkazo/rav-team-page/issues"
+    },
+    "homepage": "https://github.com/Voninkazo/rav-team-page#readme",
+    "dependencies": {
+        "node-sass": "^4.14.1",
+        "react": "^16.14.0",
+        "react-dom": "^16.14.0"
+    },
+    "browserslist": [
+        "last 1 chrome versions"
+    ]
 }
