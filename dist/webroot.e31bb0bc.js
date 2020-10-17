@@ -28285,7 +28285,17 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"components/Team.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"images/photo1.png":[function(require,module,exports) {
+module.exports = "/photo1.c8fa2220.png";
+},{}],"images/photo2.png":[function(require,module,exports) {
+module.exports = "/photo2.eca58ce1.png";
+},{}],"images/photo3.png":[function(require,module,exports) {
+module.exports = "/photo3.0a7b010c.png";
+},{}],"images/photo4.png":[function(require,module,exports) {
+module.exports = "/photo4.dc51ade0.png";
+},{}],"images/photo5.png":[function(require,module,exports) {
+module.exports = "/photo5.9f28cebf.png";
+},{}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28295,15 +28305,71 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _photo = _interopRequireDefault(require("../images/photo1.png"));
+
+var _photo2 = _interopRequireDefault(require("../images/photo2.png"));
+
+var _photo3 = _interopRequireDefault(require("../images/photo3.png"));
+
+var _photo4 = _interopRequireDefault(require("../images/photo4.png"));
+
+var _photo5 = _interopRequireDefault(require("../images/photo5.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Images() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _photo.default,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _photo2.default,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _photo3.default,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _photo4.default,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _photo4.default,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _photo5.default,
+    alt: ""
+  })));
+}
+
+var _default = Images;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../images/photo1.png":"images/photo1.png","../images/photo2.png":"images/photo2.png","../images/photo3.png":"images/photo3.png","../images/photo4.png":"images/photo4.png","../images/photo5.png":"images/photo5.png"}],"components/Team.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Images = _interopRequireDefault(require("./Images"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Team() {
-  return /*#__PURE__*/_react.default.createElement("h2", null, "Hi there");
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container wrapper"
+  }, /*#__PURE__*/_react.default.createElement("h1", null, /*#__PURE__*/_react.default.createElement("a", {
+    href: "./"
+  }, "The creative crew")), /*#__PURE__*/_react.default.createElement("article", {
+    className: "article_introduction"
+  }, /*#__PURE__*/_react.default.createElement("h2", null, "Who we are"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "introduction_paragraph"
+  }, "We are team of createvely diverse. driven. innovative individuals working in vsrious loctions from the world")))), /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Images.default, null))));
 }
 
 var _default = Team;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Images":"components/Images.js"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28363,7 +28429,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60372" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62000" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

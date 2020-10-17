@@ -19,6 +19,14 @@ a {
 }
 
 @media (min-width: 1114px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-block-start: calc(110px - calc(38px / 2));
+        column-gap: 215px;
+        padding-inline-end: 0;
+        padding-inline-start: 0;
+    }
     .container {
         max-width: 1114px;
         margin: auto;
