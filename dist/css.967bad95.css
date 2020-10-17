@@ -1,5 +1,45 @@
-body {
-  background-color: blue; }
+@font-face {
+    font-family: 'Pt-serif';
+    src: url("/pt-serif-regular.786c226b.woff2") format("woff2"), url("/pt-serif-regular.af0be7eb.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Pt-serif-bold';
+    src: url("/pt-serif-bold.0a819044.woff2") format("woff2"), url("/pt-serif-bold.43f32976.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+ont-face {
+    font-family: 'poppins';
+    src: url("/poppins-bold.49767633.woff2") format("woff2"), url("/poppins-bold.e7e7e085.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("/poppins-regular.f078ce5a.woff2") format("woff2"), url("/poppins-regular.ea1aea9a.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monserrat-bold';
+    src: url("/monserrat-bold.3a0c3d71.woff2") format("woff2"), url("/monserrat-bold.bc2c0568.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-color: blue;
+}
 
 /*# sourceMappingURL=/css.967bad95.css.map */

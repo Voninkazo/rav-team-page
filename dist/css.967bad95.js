@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\pt-serif-regular.woff2":[["pt-serif-regular.786c226b.woff2","fonts/pt-serif-regular.woff2"],"fonts/pt-serif-regular.woff2"],"./..\\fonts\\pt-serif-regular.woff":[["pt-serif-regular.af0be7eb.woff","fonts/pt-serif-regular.woff"],"fonts/pt-serif-regular.woff"],"./..\\fonts\\pt-serif-bold.woff2":[["pt-serif-bold.0a819044.woff2","fonts/pt-serif-bold.woff2"],"fonts/pt-serif-bold.woff2"],"./..\\fonts\\pt-serif-bold.woff":[["pt-serif-bold.43f32976.woff","fonts/pt-serif-bold.woff"],"fonts/pt-serif-bold.woff"],"./..\\fonts\\poppins-bold.woff2":[["poppins-bold.49767633.woff2","fonts/poppins-bold.woff2"],"fonts/poppins-bold.woff2"],"./..\\fonts\\poppins-bold.woff":[["poppins-bold.e7e7e085.woff","fonts/poppins-bold.woff"],"fonts/poppins-bold.woff"],"./..\\fonts\\poppins-regular.woff2":[["poppins-regular.f078ce5a.woff2","fonts/poppins-regular.woff2"],"fonts/poppins-regular.woff2"],"./..\\fonts\\poppins-regular.woff":[["poppins-regular.ea1aea9a.woff","fonts/poppins-regular.woff"],"fonts/poppins-regular.woff"],"./..\\fonts\\monserrat-bold.woff2":[["monserrat-bold.3a0c3d71.woff2","fonts/monserrat-bold.woff2"],"fonts/monserrat-bold.woff2"],"./..\\fonts\\monserrat-bold.woff":[["monserrat-bold.bc2c0568.woff","fonts/monserrat-bold.woff"],"fonts/monserrat-bold.woff"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59688" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60068" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
