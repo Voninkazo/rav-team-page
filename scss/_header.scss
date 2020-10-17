@@ -1,0 +1,50 @@
+:root {
+    --default-color: #000000;
+}
+
+h1 {
+    margin: 0;
+    padding-block-end: calc(38px / 2);
+    padding-block-start: calc(38px / 2);
+}
+
+h1 a {
+    font-family: 'Pt-serif-bold';
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: var(--default-color);
+}
+
+h2 {
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: var(--default-color);
+    padding-block-end: 10px;
+    padding-block-start: calc(38px / 2);
+    margin: 0;
+}
+
+.introduction_paragraph {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--default-color);
+}
+
+@media (min-width: 1114px) {
+    .introduction_paragraph {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    header>div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-block-start: calc(110px - calc(38px / 2));
+        column-gap: 215px;
+        padding-inline-end: 0;
+        padding-inline-start: 0;
+    }
+}

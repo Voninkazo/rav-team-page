@@ -1,45 +1,101 @@
 @font-face {
-    font-family: 'Pt-serif';
-    src: url("/pt-serif-regular.786c226b.woff2") format("woff2"), url("/pt-serif-regular.af0be7eb.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+  font-family: 'Pt-serif';
+  src: url("/pt-serif-regular.786c226b.woff2") format("woff2"), url("/pt-serif-regular.af0be7eb.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-    font-family: 'Pt-serif-bold';
-    src: url("/pt-serif-bold.0a819044.woff2") format("woff2"), url("/pt-serif-bold.43f32976.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+  font-family: 'Pt-serif-bold';
+  src: url("/pt-serif-bold.0a819044.woff2") format("woff2"), url("/pt-serif-bold.43f32976.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
 
 ont-face {
-    font-family: 'poppins';
-    src: url("/poppins-bold.49767633.woff2") format("woff2"), url("/poppins-bold.e7e7e085.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+  font-family: 'poppins';
+  src: url("/poppins-bold.49767633.woff2") format("woff2"), url("/poppins-bold.e7e7e085.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url("/poppins-regular.f078ce5a.woff2") format("woff2"), url("/poppins-regular.ea1aea9a.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+  font-family: 'Poppins';
+  src: url("/poppins-regular.f078ce5a.woff2") format("woff2"), url("/poppins-regular.ea1aea9a.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-    font-family: 'Monserrat-bold';
-    src: url("/monserrat-bold.3a0c3d71.woff2") format("woff2"), url("/monserrat-bold.bc2c0568.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+  font-family: 'Monserrat-bold';
+  src: url("/monserrat-bold.3a0c3d71.woff2") format("woff2"), url("/monserrat-bold.bc2c0568.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
 
 body {
-    background-color: blue;
-}
+  background-color: #FAFAFA;
+  font-family: 'Poppins'; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+a {
+  display: block;
+  text-decoration: none; }
+
+.container {
+  padding-inline-start: 12px;
+  padding-inline-end: 12px; }
+
+@media (min-width: 1114px) {
+  .container {
+    max-width: 1114px;
+    margin: auto; } }
+
+:root {
+  --default-color: #000000; }
+
+h1 {
+  margin: 0;
+  padding-block-end: calc(38px / 2);
+  padding-block-start: calc(38px / 2); }
+
+h1 a {
+  font-family: 'Pt-serif-bold';
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: var(--default-color); }
+
+h2 {
+  font-family: 'poppins';
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: var(--default-color);
+  padding-block-end: 10px;
+  padding-block-start: calc(38px / 2);
+  margin: 0; }
+
+.introduction_paragraph {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--default-color); }
+
+@media (min-width: 1114px) {
+  .introduction_paragraph {
+    font-size: 18px;
+    line-height: 27px; }
+  header > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block-start: calc(110px - calc(38px / 2));
+    column-gap: 215px;
+    padding-inline-end: 0;
+    padding-inline-start: 0; } }
+
 
 /*# sourceMappingURL=/css.967bad95.css.map */
