@@ -1,15 +1,53 @@
 @import "./variables/variables";
+.img_wrapper {
+    padding-block-start: 38px;
+}
+
 ul.image_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 22px;
+    column-gap: calc(22px * 2);
     li {
-        // max-width: 190px;
+        position: relative;
         img {
             width: 100%;
         }
+        p {
+            position: absolute;
+            font-size: 10px;
+            line-height: 13px;
+            /* identical to box height */
+            text-transform: uppercase;
+            color: #000000;
+            transform: rotate(90deg);
+        }
+        p#bill {
+            top: 12%;
+            right: -45%;
+        }
+        p#saba {
+            top: 7%;
+            right: -32%;
+        }
+        p#shae {
+            top: 5%;
+            right: -26%;
+        }
+        p#lu {
+            top: 7%;
+            right: -32%;
+        }
+        p#giff,
+        p#stan {
+            top: 5%;
+            right: -29%;
+        }
     }
+}
+
+.lower-img {
+    margin-block-start: 80px;
 }
 
 span.names {
@@ -28,9 +66,39 @@ span.names {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 56px;
+        li {
+            p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+            p#bill {
+                top: 6%;
+                right: -21%;
+            }
+            p#saba {
+                top: 4%;
+                right: -21%;
+            }
+            p#shae {
+                top: 2%;
+                right: -16%;
+            }
+            p#lu {
+                top: 4%;
+                right: -18%;
+            }
+            p#giff,
+            p#stan {
+                top: 2%;
+                right: -17%;
+            }
+        }
     }
     span.names {
         font-size: 18px;
         line-height: 27px;
+    }
+    .lower-img-lg {
+        margin-block-start: calc(80px * 2);
     }
 }

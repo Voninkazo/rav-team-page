@@ -28397,7 +28397,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Images() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
+    className: "container img_wrapper"
   }, /*#__PURE__*/_react.default.createElement("ul", {
     className: "image_container"
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("img", {
@@ -28405,32 +28405,52 @@ function Images() {
     alt: ""
   }), /*#__PURE__*/_react.default.createElement("span", {
     className: "names"
-  }, "Bill Mahoney"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("span", null, "Product owner"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
+  }, "Bill Mahoney"), /*#__PURE__*/_react.default.createElement("p", {
+    id: "bill"
+  }, "Product owne")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "lower-img"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo2.default,
     alt: ""
   }), /*#__PURE__*/_react.default.createElement("span", {
     className: "names"
-  }, "Saba Cabrera")), /*#__PURE__*/_react.default.createElement("span", null, "Art director")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
+  }, "Saba Cabrera"), /*#__PURE__*/_react.default.createElement("p", {
+    id: "saba"
+  }, "Art director")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo3.default,
     alt: ""
   }), /*#__PURE__*/_react.default.createElement("span", {
     className: "names"
-  }, "Shae Le")), /*#__PURE__*/_react.default.createElement("span", null, "Tech lead")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
+  }, "Shae Le"), /*#__PURE__*/_react.default.createElement("p", {
+    id: "shae"
+  }, "Tech lead")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "lower-img"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo4.default,
     alt: ""
   }), /*#__PURE__*/_react.default.createElement("span", {
     className: "names"
-  }, "Skylah Lu")), /*#__PURE__*/_react.default.createElement("span", null, "ux designer")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
+  }, "Skylah Lu"), /*#__PURE__*/_react.default.createElement("p", {
+    id: "lu"
+  }, "ux designer")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "lower-img-lg"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo5.default,
     alt: ""
   }), /*#__PURE__*/_react.default.createElement("span", {
     className: "names"
-  }, "Giff Richards")), /*#__PURE__*/_react.default.createElement("span", null, "developer")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
+  }, "Giff Richards"), /*#__PURE__*/_react.default.createElement("p", {
+    id: "giff"
+  }, "developer")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "lower-img"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo6.default,
     alt: ""
   }), /*#__PURE__*/_react.default.createElement("span", {
     className: "names"
-  }, "Stan John")), "developer")));
+  }, "Stan John"), /*#__PURE__*/_react.default.createElement("p", {
+    id: "stan"
+  }, "developer"))));
 }
 
 var _default = Images;
@@ -28523,7 +28543,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49185" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53480" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

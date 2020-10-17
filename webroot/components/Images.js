@@ -9,47 +9,37 @@ import '../css/index.css';
 
 function Images() {
     return(
-        <div className="container">
+        <div className="container img_wrapper">
             <ul className="image_container">
                 <li>
                     <img src={Photo1} alt=""/>
                     <span className="names">Bill Mahoney</span>
-                    <p><span>Product owner</span></p>
+                    <p id="bill">Product owne</p>
+                </li>
+                <li className="lower-img">
+                    <img src={Photo2} alt=""/>
+                    <span className="names">Saba Cabrera</span>
+                    <p id="saba">Art director</p>
                 </li>
                 <li>
-                    <picture>
-                        <img src={Photo2} alt=""/>
-                        <span className="names">Saba Cabrera</span>
-                    </picture>
-                    <span>Art director</span>
+                    <img src={Photo3} alt=""/>
+                    <span className="names">Shae Le</span>
+                    <p id="shae">Tech lead</p>
                 </li>
-                <li>
-                    <picture>
-                        <img src={Photo3} alt=""/>
-                        <span className="names">Shae Le</span>
-                    </picture>
-                    <span>Tech lead</span>
+                <li className="lower-img">
+                    <img src={Photo4} alt=""/>
+                    <span className="names">Skylah Lu</span>
+                    <p id="lu">ux designer</p>
                 </li>
-                <li>
-                    <picture>
-                        <img src={Photo4} alt=""/>
-                        <span className="names">Skylah Lu</span>
-                    </picture>
-                    <span>ux designer</span>
+                <li className="lower-img-lg">
+                    <img src={Photo5} alt=""/>
+                    <span className="names">Giff Richards</span>
+                    <p id="giff">developer</p>
                 </li>
-                <li>
-                    <picture>
-                        <img src={Photo5} alt=""/>
-                        <span className="names">Giff Richards</span>
-                    </picture>
-                    <span>developer</span>
-                </li>
-                <li>
-                    <picture>
-                        <img src={Photo6} alt=""/>
-                        <span className="names">Stan John</span>
-                    </picture>
-                    developer
+                <li className="lower-img">
+                    <img src={Photo6} alt=""/>
+                    <span className="names">Stan John</span>
+                    <p id="stan">developer</p>
                 </li>
             </ul>
         </div>
