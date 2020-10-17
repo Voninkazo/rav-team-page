@@ -1,0 +1,36 @@
+@import "./variables/variables";
+ul.image_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 22px;
+    li {
+        // max-width: 190px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+span.names {
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #000000;
+    padding-block-end: 17px;
+    padding-block-start: 17px;
+}
+
+@media (min-width:1114px) {
+    ul.image_container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 56px;
+    }
+    span.names {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}

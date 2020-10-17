@@ -28295,7 +28295,81 @@ module.exports = "/photo3.0a7b010c.png";
 module.exports = "/photo4.dc51ade0.png";
 },{}],"images/photo5.png":[function(require,module,exports) {
 module.exports = "/photo5.9f28cebf.png";
-},{}],"components/Images.js":[function(require,module,exports) {
+},{}],"images/photo6.png":[function(require,module,exports) {
+module.exports = "/photo6.f65191d3.png";
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"css/index.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\fonts\\pt-serif-regular.woff2":[["pt-serif-regular.786c226b.woff2","fonts/pt-serif-regular.woff2"],"fonts/pt-serif-regular.woff2"],"./..\\fonts\\pt-serif-regular.woff":[["pt-serif-regular.af0be7eb.woff","fonts/pt-serif-regular.woff"],"fonts/pt-serif-regular.woff"],"./..\\fonts\\pt-serif-bold.woff2":[["pt-serif-bold.0a819044.woff2","fonts/pt-serif-bold.woff2"],"fonts/pt-serif-bold.woff2"],"./..\\fonts\\pt-serif-bold.woff":[["pt-serif-bold.43f32976.woff","fonts/pt-serif-bold.woff"],"fonts/pt-serif-bold.woff"],"./..\\fonts\\poppins-bold.woff2":[["poppins-bold.49767633.woff2","fonts/poppins-bold.woff2"],"fonts/poppins-bold.woff2"],"./..\\fonts\\poppins-bold.woff":[["poppins-bold.e7e7e085.woff","fonts/poppins-bold.woff"],"fonts/poppins-bold.woff"],"./..\\fonts\\poppins-regular.woff2":[["poppins-regular.f078ce5a.woff2","fonts/poppins-regular.woff2"],"fonts/poppins-regular.woff2"],"./..\\fonts\\poppins-regular.woff":[["poppins-regular.ea1aea9a.woff","fonts/poppins-regular.woff"],"fonts/poppins-regular.woff"],"./..\\fonts\\monserrat-bold.woff2":[["monserrat-bold.3a0c3d71.woff2","fonts/monserrat-bold.woff2"],"fonts/monserrat-bold.woff2"],"./..\\fonts\\monserrat-bold.woff":[["monserrat-bold.bc2c0568.woff","fonts/monserrat-bold.woff"],"fonts/monserrat-bold.woff"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28315,33 +28389,53 @@ var _photo4 = _interopRequireDefault(require("../images/photo4.png"));
 
 var _photo5 = _interopRequireDefault(require("../images/photo5.png"));
 
+var _photo6 = _interopRequireDefault(require("../images/photo6.png"));
+
+require("../css/index.css");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Images() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("ul", {
+    className: "image_container"
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo.default,
     alt: ""
-  }), /*#__PURE__*/_react.default.createElement("img", {
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "names"
+  }, "Bill Mahoney"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("span", null, "Product owner"))), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo2.default,
     alt: ""
-  }), /*#__PURE__*/_react.default.createElement("img", {
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "names"
+  }, "Saba Cabrera")), /*#__PURE__*/_react.default.createElement("span", null, "Art director")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo3.default,
     alt: ""
-  }), /*#__PURE__*/_react.default.createElement("img", {
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "names"
+  }, "Shae Le")), /*#__PURE__*/_react.default.createElement("span", null, "Tech lead")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo4.default,
     alt: ""
-  }), /*#__PURE__*/_react.default.createElement("img", {
-    src: _photo4.default,
-    alt: ""
-  }), /*#__PURE__*/_react.default.createElement("img", {
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "names"
+  }, "Skylah Lu")), /*#__PURE__*/_react.default.createElement("span", null, "ux designer")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
     src: _photo5.default,
     alt: ""
-  })));
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "names"
+  }, "Giff Richards")), /*#__PURE__*/_react.default.createElement("span", null, "developer")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("img", {
+    src: _photo6.default,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "names"
+  }, "Stan John")), "developer")));
 }
 
 var _default = Images;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../images/photo1.png":"images/photo1.png","../images/photo2.png":"images/photo2.png","../images/photo3.png":"images/photo3.png","../images/photo4.png":"images/photo4.png","../images/photo5.png":"images/photo5.png"}],"components/Team.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../images/photo1.png":"images/photo1.png","../images/photo2.png":"images/photo2.png","../images/photo3.png":"images/photo3.png","../images/photo4.png":"images/photo4.png","../images/photo5.png":"images/photo5.png","../images/photo6.png":"images/photo6.png","../css/index.css":"css/index.css"}],"components/Team.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28429,7 +28523,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62000" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49185" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
